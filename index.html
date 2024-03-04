@@ -1,0 +1,58 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Propriedade Inclusão-Exclusão</title>
+</head>
+<body onload = "selecionar()">
+    <table id="menu">
+        <tr id="topo">
+            <td colspan="2">
+                <h2>UNIÃO DE CONJUNTOS</h2>
+                <fieldset>
+                    <legend>Selecione</legend>
+                    <label><input type="radio" id="opcao2" name="selecao" onclick="selecionar()" checked>|AUB|</label>
+                    <label><input type="radio" id="opcao3" name="selecao" onclick="selecionar()">|AUBUC|</label>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="sel">
+                    Dois Conjuntos
+                    <input type="text" placeholder="|A|" id="A2" class="dois">
+                    <input type="text" placeholder="|A&#8745;B|"  id="AeB2" class="dois">
+                    <input type="text" placeholder="|B|" id="B2" class="dois">      
+                </div>
+            </td>
+            <td>
+                <div id="sel">
+                    Três Conjuntos
+                    <input type="text" placeholder="|A|" id="A3" class="tres">
+                    <input type="text" placeholder="|B|" id="B3" class="tres">
+                    <input type="text" placeholder="|C|" id="C3" class="tres">
+                    <input type="text" placeholder="|A&#8745;B|"  id="AeB3" class="tres">
+                    <input type="text" placeholder="|A&#8745;C|" id="AeC3" class="tres">
+                    <input type="text" placeholder="|B&#8745;C|" id="BeC3" class="tres">    
+                    <input type="text" placeholder="|A&#8745;B&#8745;C|" id="AeBeC3" class="tres">   
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="sel">
+                    <input type="button"  onclick="calcular2()" value="Calcular" class="dois">
+                </div>
+            </td>
+            <td>
+                <div id="sel">
+                    <input type="button"  onclick="calcular3()" value="Calcular" class="tres">
+                </div>
+            </td>
+        </tr>
+        <tr id="resultado">
+        </tr>
+    </table>  
+</body>
+</html>

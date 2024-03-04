@@ -1,0 +1,38 @@
+#menu, td {
+    margin: auto;
+    vertical-align: top;
+}
+
+#topo{
+    text-align: center;
+}
+
+#selecao{
+    padding: 100px;
+}
+
+#sel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input{
+    margin: 10px;
+    text-align: center;
+    padding: 3px;
+}
+
+input[type=button], input[type=text]{
+    width: 100%;
+}
+input[type=button], input[type=radio]{
+   cursor: pointer;
+}
+
+#cardinalidade{
+    font-weight: 700;
+    padding: 10px;
+    border: 1px solid black;
+}
